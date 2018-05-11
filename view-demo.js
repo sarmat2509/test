@@ -173,6 +173,10 @@
                 }, 600);
             });
         },
+
+        /**
+         * Show share tooltip with scrolling page top if needed
+         */
         showShareTooltip: function(){
             const self = this;
             const shareTooltip = $('.' + self.classes.shareTooltip);
@@ -311,6 +315,13 @@
             $('.' + self.classes.container).addClass(self.classes.containerHideForm);
             self.player.playVideo();
         },
+
+        /**
+         * Get index of video with videoId in videoList
+         *
+         * @param {number} videoId The First Number
+         * @returns {number}
+         */
         getDemoVideoIndexByVideoId: function(videoId){
             const self = this;
             let index = 0;
